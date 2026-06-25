@@ -1,0 +1,86 @@
+/* assets/css/variables.css — Design tokens */
+
+:root {
+  /* Brand */
+  --brand:        #6C63FF;
+  --brand-dark:   #4F46E5;
+  --brand-light:  #8B82FF;
+  --brand-glow:   rgba(108, 99, 255, 0.25);
+
+  /* Accent */
+  --teal:         #22D3A5;
+  --teal-dark:    #14B896;
+
+  /* Status colors */
+  --color-backlog:     #6B7280;
+  --color-todo:        #3B82F6;
+  --color-in-progress: #F59E0B;
+  --color-review:      #8B5CF6;
+  --color-done:        #10B981;
+
+  /* Priority colors */
+  --priority-low:      #10B981;
+  --priority-medium:   #F59E0B;
+  --priority-high:     #F97316;
+  --priority-critical: #EF4444;
+
+  /* Typography */
+  --font-sans:  'Inter', -apple-system, sans-serif;
+  --font-mono:  'JetBrains Mono', monospace;
+
+  /* Radius */
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  16px;
+  --radius-xl:  24px;
+
+  /* Transitions */
+  --ease:       cubic-bezier(0.4, 0, 0.2, 1);
+  --dur:        180ms;
+}
+
+/* ── DARK THEME (default) ─────────────────────────────────── */
+[data-theme="dark"] {
+  --bg-base:      #0D0E14;
+  --bg-surface:   #13141E;
+  --bg-elevated:  #1A1C28;
+  --bg-overlay:   #222436;
+  --bg-hover:     rgba(255,255,255,0.05);
+  --bg-active:    rgba(108,99,255,0.15);
+
+  --border:       rgba(255,255,255,0.08);
+  --border-focus: var(--brand);
+
+  --text-primary:   #F1F2F7;
+  --text-secondary: #8B8FA8;
+  --text-muted:     #555870;
+  --text-inverse:   #0D0E14;
+
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md:  0 4px 16px rgba(0,0,0,0.5);
+  --shadow-lg:  0 12px 40px rgba(0,0,0,0.6);
+  --shadow-glow:0 0 20px rgba(108,99,255,0.3);
+}
+
+/* ── LIGHT THEME ──────────────────────────────────────────── */
+[data-theme="light"] {
+  --bg-base:      #F4F5FA;
+  --bg-surface:   #FFFFFF;
+  --bg-elevated:  #FFFFFF;
+  --bg-overlay:   #F0F0F8;
+  --bg-hover:     rgba(0,0,0,0.04);
+  --bg-active:    rgba(108,99,255,0.08);
+
+  --border:       rgba(0,0,0,0.1);
+  --border-focus: var(--brand);
+
+  --text-primary:   #1A1B2E;
+  --text-secondary: #555870;
+  --text-muted:     #9CA3AF;
+  --text-inverse:   #FFFFFF;
+
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md:  0 4px 16px rgba(0,0,0,0.1);
+  --shadow-lg:  0 12px 40px rgba(0,0,0,0.15);
+  --shadow-glow:0 0 20px rgba(108,99,255,0.15);
+}

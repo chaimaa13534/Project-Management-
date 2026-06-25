@@ -1,0 +1,63 @@
+/* assets/css/responsive.css */
+
+@media (max-width: 1100px) {
+  .dashboard-grid { grid-template-columns: 1fr; }
+  .profile-layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    width: 240px !important;
+    z-index: 300;
+    box-shadow: var(--shadow-lg);
+  }
+  .sidebar.mobile-open { transform: translateX(0); }
+
+  .main-wrapper { margin-left: 0 !important; }
+
+  .page-content { padding: 16px; }
+
+  .topbar { padding: 0 16px; }
+  .topbar-left { display: none; }
+
+  #topbar-name { display: none; }
+
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+
+  .projects-grid { grid-template-columns: 1fr; }
+
+  .form-row { grid-template-columns: 1fr; }
+
+  .task-modal-layout { grid-template-columns: 1fr; }
+  .task-modal-sidebar { border-left: none; padding-left: 0; border-top: 1px solid var(--border); padding-top: 20px; }
+
+  .modal-box { max-width: 100%; margin: 0; border-radius: var(--radius-lg) var(--radius-lg) 0 0; align-self: flex-end; }
+  .modal { align-items: flex-end; padding: 0; }
+
+  .kanban-board { gap: 10px; }
+  .kanban-column { flex: 0 0 260px; }
+
+  .page-header { flex-direction: column; align-items: flex-start; }
+  .page-actions { width: 100%; justify-content: flex-start; }
+
+  .btn-new-project span, .btn span { }
+
+  .notif-panel { right: -60px; width: 300px; }
+}
+
+@media (max-width: 480px) {
+  .stats-grid { grid-template-columns: 1fr; }
+  .auth-card { padding: 24px 20px; }
+  .kanban-column { flex: 0 0 240px; }
+}
+
+/* Mobile sidebar overlay */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 299;
+}
+.sidebar-overlay.active { display: block; }
