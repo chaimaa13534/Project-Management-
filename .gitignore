@@ -1,9 +1,0 @@
-node_modules/
-.env
-server/uploads/avatars/*
-server/uploads/attachments/*
-!server/uploads/avatars/.gitkeep
-!server/uploads/attachments/.gitkeep
-*.log
-.DS_Store
-Thumbs.db
